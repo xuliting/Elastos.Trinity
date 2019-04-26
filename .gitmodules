@@ -102,3 +102,7 @@
 	path = Plugins/Wallet
 	url = ../Elastos.Trinity.Plugins.Wallet.git
 	branch = dev
+[submodule "SPV.Cpp"]
+	path = Dependency/SPV.Cpp
+	url = ../Elastos.ELA.SPV.Cpp
+	branch = dev
