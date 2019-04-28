@@ -13,6 +13,7 @@
 [submodule "ToolChains"]
 	path = ToolChains
 	url = ../Elastos.Trinity.ToolChains.git
+	branch = dev
 [submodule "Plugins/Vibration"]
 	path = Plugins/Vibration
 	url = ../Elastos.Trinity.Plugins.Vibration.git
