@@ -152,3 +152,10 @@ We welcome contributions to the Elastos Trinity Project.
 ## Acknowledgments
 
 A sincere thank you to all teams and projects that we rely on directly or indirectly.
+
+### Big Thanks
+
+Cross-browser Testing Platform and Open Source <3 Provided by [Sauce Labs][homepage]
+
+[homepage]: https://saucelabs.com
+
