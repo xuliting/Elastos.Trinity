@@ -94,6 +94,10 @@
 	path = Plugins/Carrier
 	url = ../Elastos.Trinity.Plugins.Carrier.git
 	branch = dev
+[submodule "Plugins/Hive"]
+	path = Plugins/Hive
+	url = ../Elastos.Trinity.Plugins.Hive.git
+	branch = dev
 [submodule "Plugins/Wallet"]
 	path = Plugins/Wallet
 	url = ../Elastos.Trinity.Plugins.Wallet.git
