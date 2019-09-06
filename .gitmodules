@@ -1,112 +1,56 @@
-[submodule "Plugins/Media"]
-	path = Plugins/Media
-	url = ../Elastos.Trinity.Plugins.Media.git
-	branch = dev
-[submodule "Runtime"]
-	path = Runtime
-	url = ../Elastos.Trinity.Runtime.git
+[submodule "SPV.Cpp"]
+	path = Dependency/SPV.Cpp
+	url = ../Elastos.ELA.SPV.Cpp
 	branch = dev
 [submodule "Launcher"]
 	path = Launcher
 	url = ../Elastos.Trinity.DApps.Launcher.git
 	branch = dev
-[submodule "ToolChains"]
-	path = ToolChains
-	url = ../Elastos.Trinity.ToolChains.git
-	branch = dev
-[submodule "Plugins/Vibration"]
-	path = Plugins/Vibration
-	url = ../Elastos.Trinity.Plugins.Vibration.git
-	branch = dev
-[submodule "Plugins/PluginDemo"]
-	path = Plugins/PluginDemo
-	url = ../Elastos.Trinity.Runtime.Plugins.PluginDemo.git
-	branch = dev
-[submodule "Plugins/AppManager"]
-	path = Plugins/AppManager
-	url = ../Elastos.Trinity.Runtime.Plugins.AppManager.git
-	branch = dev
-[submodule "Plugins/InappBrowser"]
-	path = Plugins/InappBrowser
-	url = ../Elastos.Trinity.Plugins.InappBrowser.git
-	branch = dev
-[submodule "Plugins/File"]
-	path = Plugins/File
-	url = ../Elastos.Trinity.Plugins.File.git
-	branch = dev
-[submodule "Plugins/AppService"]
-	path = Plugins/AppService
-	url = ../Elastos.Trinity.Runtime.Plugins.AppService.git
-	branch = dev
-[submodule "Plugins/ScreenOrientation"]
-	path = Plugins/ScreenOrientation
-	url = ../Elastos.Trinity.Plugins.ScreenOrientation.git
-	branch = dev
-[submodule "Plugins/Camera"]
-	path = Plugins/Camera
-	url = ../Elastos.Trinity.Plugins.Camera.git
-	branch = dev
-[submodule "Plugins/Statusbar"]
-	path = Plugins/Statusbar
-	url = ../Elastos.Trinity.Plugins.Statusbar.git
-	branch = dev
-[submodule "Plugins/SplashScreen"]
-	path = Plugins/SplashScreen
-	url = ../Elastos.Trinity.Plugins.SplashScreen.git
-	branch = dev
-[submodule "Plugins/Dialog"]
-	path = Plugins/Dialog
-	url = ../Elastos.Trinity.Plugins.Dialog.git
-	branch = dev
-[submodule "Plugins/Geolocation"]
-	path = Plugins/Geolocation
-	url = ../Elastos.Trinity.Plugins.Geolocation.git
-	branch = dev
-[submodule "Plugins/BatteryStatus"]
-	path = Plugins/BatteryStatus
-	url = ../Elastos.Trinity.Plugins.BatteryStatus.git
-	branch = dev
-[submodule "Plugins/Flashlight"]
-	path = Plugins/Flashlight
-	url = ../Elastos.Trinity.Plugins.Flashlight.git
-	branch = dev
-[submodule "Plugins/Device"]
-	path = Plugins/Device
-	url = ../Elastos.Trinity.Plugins.Device.git
-	branch = dev
-[submodule "Plugins/MediaCapture"]
-	path = Plugins/MediaCapture
-	url = ../Elastos.Trinity.Plugins.MediaCapture.git
-	branch = dev
-[submodule "Plugins/DeviceMotion"]
-	path = Plugins/DeviceMotion
-	url = ../Elastos.Trinity.Plugins.DeviceMotion.git
-	branch = dev
-[submodule "Plugins/QRScanner"]
-	path = Plugins/QRScanner
-	url = ../Elastos.Trinity.Plugins.QRScanner.git
-	branch = dev
-[submodule "Plugins/NetWorkInformation"]
-	path = Plugins/NetWorkInformation
-	url = ../Elastos.Trinity.Plugins.NetWorkInformation.git
+[submodule "Dapps/Ionic/Wallet"]
+	path = Dapps/Ionic/Wallet
+	url = ../Elastos.Trinity.Dapps.Wallet.git
 	branch = dev
 [submodule "Plugins/Carrier"]
 	path = Plugins/Carrier
 	url = ../Elastos.Trinity.Plugins.Carrier.git
 	branch = dev
-[submodule "Plugins/Wallet"]
-	path = Plugins/Wallet
-	url = ../Elastos.Trinity.Plugins.Wallet.git
+[submodule "Plugins/File"]
+	path = Plugins/File
+	url = ../Elastos.Trinity.Plugins.File.git
 	branch = dev
-[submodule "SPV.Cpp"]
-	path = Dependency/SPV.Cpp
-	url = ../Elastos.ELA.SPV.Cpp
+[submodule "Plugins/Hive"]
+	path = Plugins/Hive
+	url = ../Elastos.Trinity.Plugins.Hive.git
 	branch = dev
 [submodule "Plugins/IonicWebView"]
 	path = Plugins/IonicWebView
 	url = ../Elastos.Trinity.Plugins.IonicWebView.git
 	branch = dev
-[submodule "Dapps/Ionic/Wallet"]
-	path = Dapps/Ionic/Wallet
-	url = ../Elastos.Trinity.Dapps.Wallet.git
+[submodule "Plugins/Media"]
+	path = Plugins/Media
+	url = ../Elastos.Trinity.Plugins.Media.git
+	branch = dev
+[submodule "Plugins/QRScanner"]
+	path = Plugins/QRScanner
+	url = ../Elastos.Trinity.Plugins.QRScanner.git
+	branch = dev
+[submodule "Plugins/Wallet"]
+	path = Plugins/Wallet
+	url = ../Elastos.Trinity.Plugins.Wallet.git
+	branch = dev
+[submodule "Runtime"]
+	path = Runtime
+	url = ../Elastos.Trinity.Runtime.git
+	branch = feat_nativePlugins
+[submodule "Plugins/AppManager"]
+	path = Plugins/AppManager
+	url = ../Elastos.Trinity.Runtime.Plugins.AppManager.git
+	branch = dev
+[submodule "Plugins/AppService"]
+	path = Plugins/AppService
+	url = ../Elastos.Trinity.Runtime.Plugins.AppService.git
+	branch = dev
+[submodule "ToolChains"]
+	path = ToolChains
+	url = ../Elastos.Trinity.ToolChains.git
 	branch = dev
