@@ -41,7 +41,7 @@
 [submodule "Runtime"]
 	path = Runtime
 	url = ../Elastos.Trinity.Runtime.git
-	branch = feat_nativePlugins
+	branch = dev
 [submodule "Plugins/AppManager"]
 	path = Plugins/AppManager
 	url = ../Elastos.Trinity.Runtime.Plugins.AppManager.git
