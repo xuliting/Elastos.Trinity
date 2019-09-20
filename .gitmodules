@@ -5,52 +5,52 @@
 [submodule "Launcher"]
 	path = Launcher
 	url = ../Elastos.Trinity.DApps.Launcher.git
-	branch = dev
+	branch = master
 [submodule "Dapps/Ionic/Wallet"]
 	path = Dapps/Ionic/Wallet
 	url = ../Elastos.Trinity.Dapps.Wallet.git
-	branch = dev
+	branch = master
 [submodule "Plugins/Carrier"]
 	path = Plugins/Carrier
 	url = ../Elastos.Trinity.Plugins.Carrier.git
-	branch = dev
+	branch = master
 [submodule "Plugins/File"]
 	path = Plugins/File
 	url = ../Elastos.Trinity.Plugins.File.git
-	branch = dev
+	branch = trinity
 [submodule "Plugins/Hive"]
 	path = Plugins/Hive
 	url = ../Elastos.Trinity.Plugins.Hive.git
-	branch = dev
+	branch = master
 [submodule "Plugins/IonicWebView"]
 	path = Plugins/IonicWebView
 	url = ../Elastos.Trinity.Plugins.IonicWebView.git
-	branch = dev
+	branch = trinity
 [submodule "Plugins/Media"]
 	path = Plugins/Media
 	url = ../Elastos.Trinity.Plugins.Media.git
-	branch = dev
+	branch = trinity
 [submodule "Plugins/QRScanner"]
 	path = Plugins/QRScanner
 	url = ../Elastos.Trinity.Plugins.QRScanner.git
-	branch = dev
+	branch = trinity
 [submodule "Plugins/Wallet"]
 	path = Plugins/Wallet
 	url = ../Elastos.Trinity.Plugins.Wallet.git
-	branch = dev
+	branch = master
 [submodule "Runtime"]
 	path = Runtime
 	url = ../Elastos.Trinity.Runtime.git
-	branch = feat_nativePlugins
+	branch = master
 [submodule "Plugins/AppManager"]
 	path = Plugins/AppManager
 	url = ../Elastos.Trinity.Runtime.Plugins.AppManager.git
-	branch = dev
+	branch = master
 [submodule "Plugins/AppService"]
 	path = Plugins/AppService
 	url = ../Elastos.Trinity.Runtime.Plugins.AppService.git
-	branch = dev
+	branch = master
 [submodule "ToolChains"]
 	path = ToolChains
 	url = ../Elastos.Trinity.ToolChains.git
-	branch = dev
+	branch = master
