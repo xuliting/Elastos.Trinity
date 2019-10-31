@@ -23,6 +23,9 @@
 	path = Plugins/Carrier
 	url = ../Elastos.Trinity.Plugins.Carrier.git
 	branch = master
+[submodule "Plugins/DID"]
+	path = Plugins/DID
+	url = ../Elastos.Trinity.Plugins.DID.git
 [submodule "Plugins/File"]
 	path = Plugins/File
 	url = ../Elastos.Trinity.Plugins.File.git
