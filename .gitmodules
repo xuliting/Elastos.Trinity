@@ -11,6 +11,7 @@
 [submodule "Dapps/Ionic/DAppStore"]
 	path = Dapps/Ionic/DAppStore
 	url = ../Elastos.Trinity.DApps.DAppsStore.git
+	branch = master
 [submodule "Dapps/Ionic/DID"]
 	path = Dapps/Ionic/DID
 	url = ../Elastos.Trinity.DApps.DID.git
