@@ -15,6 +15,9 @@
 [submodule "Dapps/Ionic/DID"]
 	path = Dapps/Ionic/DID
 	url = ../Elastos.Trinity.DApps.DID.git
+[submodule "Dapps/Ionic/DIDDemo"]
+	path = Dapps/Ionic/DIDDemo
+	url = ../Elastos.Trinity.DApps.Demo.DID.git
 [submodule "Dapps/Ionic/DPoSVoting"]
 	path = Dapps/Ionic/DPoSVoting
 	url = ../Elastos.Trinity.DApps.DPoSVoting.git
