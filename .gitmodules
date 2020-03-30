@@ -13,6 +13,9 @@
 [submodule "Dapps/Ionic/Settings"]
 	path = Dapps/Ionic/Settings
 	url = ../Elastos.Trinity.DApps.Settings.git
+[submodule "Dapps/Ionic/Wallet"]
+	path = Dapps/Ionic/Wallet
+	url = ../Elastos.Trinity.DApps.Wallet.git
 [submodule "Plugins/Carrier"]
 	path = Plugins/Carrier
 	url = ../Elastos.Trinity.Plugins.Carrier.git
