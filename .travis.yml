@@ -20,6 +20,7 @@ matrix:
         - cd $TRAVIS_BUILD_DIR/Runtime
         - cp -r www_files/ www
         - npm install
+        - $TRAVIS_BUILD_DIR/ToolChains/bin/build plugin
         - travis_wait 30 cordova prepare
         - $TRAVIS_BUILD_DIR/ToolChains/bin/build $BUILD_TARGET -pf $BUILD_PLATFORM --buildarg "| grep -v 'Applications\|export\|codesign'"
 
