@@ -18,34 +18,35 @@ matrix:
         # and if use cache, also slow
         # "| grep -v 'Applications\|export\|codesign'": just reduce the log size
         # travis_wait alway success
-        # - cd $TRAVIS_BUILD_DIR/Runtime
-        # - cp -r www_files/ www
-        # - npm install
-        # - $TRAVIS_BUILD_DIR/ToolChains/bin/build plugin
+        - cd $TRAVIS_BUILD_DIR/Runtime
+        - cp -r www_files/ www
+        - npm install
+        - $TRAVIS_BUILD_DIR/ToolChains/bin/build plugin
         # - travis_wait 30 cordova prepare
+        - cordova prepare
         - $TRAVIS_BUILD_DIR/ToolChains/bin/build $BUILD_TARGET -pf $BUILD_PLATFORM --buildarg "| grep -v 'Applications\|export\|codesign'"
 
-    - language: android
-      dist: trusty
-      env: NODEJS_VERSION=12 NDK=r18b BUILD_TARGET=launcher BUILD_PLATFORM=android DEPLOY=TRUE CACHE_NAME=android
-      if: NOT tag IS present OR tag !~ /^(daily)/
-      android:
-        components:
-          - tools
-          - platform-tools
-          - build-tools-28.0.3
-          - android-28
-        licenses:
-          - 'android-sdk-preview-license-.+'
-          - 'android-sdk-license-.+'
-          - 'google-gdk-license-.+'
+    # - language: android
+    #   dist: trusty
+    #   env: NODEJS_VERSION=12 NDK=r18b BUILD_TARGET=launcher BUILD_PLATFORM=android DEPLOY=TRUE CACHE_NAME=android
+    #   if: NOT tag IS present OR tag !~ /^(daily)/
+    #   android:
+    #     components:
+    #       - tools
+    #       - platform-tools
+    #       - build-tools-28.0.3
+    #       - android-28
+    #     licenses:
+    #       - 'android-sdk-preview-license-.+'
+    #       - 'android-sdk-license-.+'
+    #       - 'google-gdk-license-.+'
 
-    - env: NODEJS_VERSION=12 BUILD_TARGET=dapp CACHE_NAME=dapp
-      dist: xenial
-      if: NOT tag IS present OR tag !~ /^(daily)/
-      before_install:
-      script:
-        - $TRAVIS_BUILD_DIR/ToolChains/bin/build dapp
+    # - env: NODEJS_VERSION=12 BUILD_TARGET=dapp CACHE_NAME=dapp
+    #   dist: xenial
+    #   if: NOT tag IS present OR tag !~ /^(daily)/
+    #   before_install:
+    #   script:
+    #     - $TRAVIS_BUILD_DIR/ToolChains/bin/build dapp
 
 before_install:
   - wget -q https://services.gradle.org/distributions/gradle-5.4.1-bin.zip
@@ -112,13 +113,13 @@ before_cache:
   - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 cache:
   # timeout: 1000
-  # cocoapods: true
+  cocoapods: true
   directories:
   - $HOME/.m2
   - $HOME/.gradle
   - $HOME/.gradle/caches/
   - $HOME/.gradle/wrapper/
-  # - $HOME/.cocoapods/
+  - $HOME/.cocoapods/
 
 # notifications:
 #   email:
