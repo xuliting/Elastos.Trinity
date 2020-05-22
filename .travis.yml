@@ -5,7 +5,7 @@ matrix:
   include:
     - os: osx
       osx_image: xcode11.4
-      env: NODEJS_VERSION=12 NDK=r18b BUILD_TARGET=runtime BUILD_PLATFORM=ios CACHE_NAME=ios
+      env: NODEJS_VERSION=12 NDK=r18b BUILD_TARGET=runtime BUILD_PLATFORM=ios
       if: NOT tag IS present OR tag !~ /^(daily)/
       addons:
         homebrew:
@@ -17,7 +17,7 @@ matrix:
         # osx:pod install too slow, so use travis_wait 40
         # and if use cache, also slow
         # "| grep -v 'Applications\|export\|codesign'": just reduce the log size
-        # travis_wait also success
+        # travis_wait alway success
         - cd $TRAVIS_BUILD_DIR/Runtime
         - cp -r www_files/ www
         - npm install
