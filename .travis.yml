@@ -18,11 +18,11 @@ matrix:
         # and if use cache, also slow
         # "| grep -v 'Applications\|export\|codesign'": just reduce the log size
         # travis_wait alway success
-        - cd $TRAVIS_BUILD_DIR/Runtime
-        - cp -r www_files/ www
-        - npm install
-        - $TRAVIS_BUILD_DIR/ToolChains/bin/build plugin
-        - travis_wait 30 cordova prepare
+        # - cd $TRAVIS_BUILD_DIR/Runtime
+        # - cp -r www_files/ www
+        # - npm install
+        # - $TRAVIS_BUILD_DIR/ToolChains/bin/build plugin
+        # - travis_wait 30 cordova prepare
         - $TRAVIS_BUILD_DIR/ToolChains/bin/build $BUILD_TARGET -pf $BUILD_PLATFORM --buildarg "| grep -v 'Applications\|export\|codesign'"
 
     - language: android
