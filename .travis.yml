@@ -114,15 +114,16 @@ cache:
   timeout: 1000
   cocoapods: true
   directories:
-  - "$HOME/.m2"
-  - "$HOME/.gradle"
-  - "$HOME/.gradle/caches/"
-  - "$HOME/.gradle/wrapper/"
+  - $HOME/.m2
+  - $HOME/.gradle
+  - $HOME/.gradle/caches/
+  - $HOME/.gradle/wrapper/
+  - $HOME/.cocoapods/
 
-notifications:
-  email:
-  - raozhiming@trinity-tech.io
-  - benjaminpiette@elastos-fusion.org
+# notifications:
+#   email:
+#   - raozhiming@trinity-tech.io
+#   - benjaminpiette@elastos-fusion.org
 
 before_deploy:
   # Set up git user name and tag this commit
