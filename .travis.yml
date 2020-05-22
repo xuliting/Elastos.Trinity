@@ -16,7 +16,12 @@ matrix:
         # osx:pod install too slow, so use travis_wait 40
         # and if use cache, also slow
         # "| grep -v 'Applications\|export\|codesign'": just reduce the log size
-        - travis_wait 40 $TRAVIS_BUILD_DIR/ToolChains/bin/build $BUILD_TARGET -pf $BUILD_PLATFORM --buildarg "| grep -v 'Applications\|export\|codesign'"
+        # - travis_wait 40 $TRAVIS_BUILD_DIR/ToolChains/bin/build $BUILD_TARGET -pf $BUILD_PLATFORM --buildarg "| grep -v 'Applications\|export\|codesign'"
+        - cd $TRAVIS_BUILD_DIR/Runtime
+        - cp -r www_files/ www
+        - npm install
+        - travis_wait 30 cordova prepare
+        - $TRAVIS_BUILD_DIR/ToolChains/bin/build $BUILD_TARGET -pf $BUILD_PLATFORM --buildarg "| grep -v 'Applications\|export\|codesign'"
 
     - language: android
       dist: trusty
