@@ -12,6 +12,11 @@ matrix:
           update: true
           taps: homebrew/cask-versions
           casks: adoptopenjdk8
+      script:
+        # osx:pod install too slow, so use travis_wait 40
+        # and if use cache, also slow
+        # "| grep -v 'Applications\|export\|codesign'": just reduce the log size
+        - travis_wait 40 $TRAVIS_BUILD_DIR/ToolChains/bin/build $BUILD_TARGET -pf $BUILD_PLATFORM --buildarg "| grep -v 'Applications\|export\|codesign'"
 
     - language: android
       dist: trusty
@@ -83,16 +88,9 @@ install:
     fi
 
 script:
-  # osx:pod install too slow, so use travis_wait 40
-  # and if use cache, also slow
-  # "| grep -v 'Applications\|export\|codesign'": just reduce the log size
-  - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then
-      export APK_PATH=$TRAVIS_BUILD_DIR/Runtime/platforms/android/app/build/outputs/apk/debug;
-      $TRAVIS_BUILD_DIR/ToolChains/bin/build $BUILD_TARGET -pf $BUILD_PLATFORM;
-      ls -l $APK_PATH;
-    else
-      travis_wait 40 $TRAVIS_BUILD_DIR/ToolChains/bin/build $BUILD_TARGET -pf $BUILD_PLATFORM --buildarg "| grep -v 'Applications\|export\|codesign'";
-    fi
+  - export APK_PATH=$TRAVIS_BUILD_DIR/Runtime/platforms/android/app/build/outputs/apk/debug
+  - $TRAVIS_BUILD_DIR/ToolChains/bin/build $BUILD_TARGET -pf $BUILD_PLATFORM
+  - ls -l $APK_PATH
 
 after_success:
   - if [[ "$DEPLOY" != "" ]]; then
